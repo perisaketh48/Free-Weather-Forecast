@@ -1,0 +1,53 @@
+/* Base Styles */
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("/public/assests/Homepage.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px; /* Adjusted for better padding */
+}
+
+.h1 {
+    color: #ffffff;
+    font-size: 5vw; /* Changed to viewport width for responsiveness */
+}
+
+.free, .weather {
+    font-family: 'Outfit';
+}
+
+/* Specific Styles */
+.free {
+    color: #31D0B2;
+}
+
+.weather {
+    color: #F8906B;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .h1 {
+        font-size: 8vw; /* Adjust font size for tablets */
+    }
+
+    .root {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .h1 {
+        font-size: 10vw; /* Further adjust font size for mobile phones */
+    }
+
+    .root {
+        background-size: cover;
+        padding: 5px; /* Reduce padding for very small screens */
+    }
+}
